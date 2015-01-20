@@ -1,0 +1,24 @@
+<head>
+	<title>Bobapp</title>
+</head>
+
+<body>
+
+	<header>
+		<h1 class="style">Bobapp</h1>
+		<div class="container">
+			<form class="test">
+				<input type="text" name="adresse" placeholder="Tapez l'adresse ici" class="col-md-9 col-md-offset-1 hauteur"/>
+				<button type="submit" class="btn btn-info hauteur">Envoyer</button>
+			</form>
+		</div>
+
+		{{#each spots}}
+			{{> spot}}
+		{{/each}}
+
+	</header>
+
+	<footer>
+	</footer>
+</body>

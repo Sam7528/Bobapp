@@ -1,0 +1,16 @@
+<template name="spot" class="space">
+	<p><strong><u>{{adresse}}</u></strong>
+		<button class="delete">&times;</button>
+	</p>
+	<p><strong>Latitude</strong>: {{latitude}} + <strong>Longitude</strong>:{{longitude}}</p>
+	<p><strong>Vitesse du vent</strong> : {{windSpeed}}
+	</p>
+	<p><strong>Les 7 prochains jours</strong></p>
+	<p>
+		{{#each dailySpeed}}
+			{{this}} |
+		{{/each}}
+	</p>
+
+	<div class="separation col-md-6 col-md-offset-3"></div>
+</template>
